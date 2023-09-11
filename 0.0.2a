@@ -1,0 +1,14 @@
+b = 2023
+a = int(input("when was you born "))
+c = (b-a)
+print("your age is : ", c)
+
+
+if(c>=18):
+    print("welcome ")
+    print("you can enter")
+else:
+    print("what are you doing here")
+    print("you are too young to enter ")
+    print("get out from here")
+    print("I am going to call your parents")
