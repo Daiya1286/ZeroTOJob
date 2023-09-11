@@ -1,0 +1,59 @@
+# Python Calculator 
+
+#This function adds two numbers
+def add(a, b):
+    return a + b
+
+#This function subtracts two numbers
+def subtract(a, b):
+    return a - b
+
+#This function multiplies two numbers
+def multiply(a, b):
+    return a * b
+
+#This function divides two numbers
+def divide(a, b):
+    return a / b
+
+print("Select Operator")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+    # take input from user
+    choice = input("Enter choice(1/2/3/4): ")
+    
+    if choice in ('1', '2', '3', '4'):
+        try:
+            x = float(input("Enter first number: "))
+            y = float(input("Enter second number: "))
+        except ValueError:
+            print("Invalid input. Please enter x number.")
+            continue
+    if choice == '1':
+        print(x, "+", y, "=", add(x, y))
+    
+    elif choice == '2':
+        print(x, "-", y, "=", subtract(x, y))
+        
+    elif choice == '3':
+        print(x, "*", y, "=", multiply(x, y))
+        
+    elif choice == '4':
+        print(x, "/", y, "=", divide(x, y))
+        
+    # check if user want another calculation
+    # break the while loop if the answer is no
+    next_calculation = input("Let's do next calculation? (yes/no): ")
+    if next_calculation == "no":
+        print("Thank You For Using This Crap Calc.")
+        break 
+else:
+    print("Invalid Input!")
+    
+    
+# Code by Daiya
+# ^-^
